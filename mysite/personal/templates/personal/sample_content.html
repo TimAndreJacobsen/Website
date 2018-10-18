@@ -1,0 +1,204 @@
+{% extends "personal/home.html" %}
+
+{% block content %}
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Roboto:100,700;);
+
+    .content_item {
+        background-color: #000;
+        color: #fff;
+        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+        font-size: 24px;
+        margin: 8px;
+        max-width: 315px;
+        min-width: 230px;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        width: 100%;
+    }
+
+    .content_item * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all 0.45s ease;
+        transition: all 0.45s ease;
+    }
+
+    .content_item:before,
+    .content_item:after {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-top: 50px solid rgba(0, 0, 0, 0.5);
+        border-bottom: 50px solid rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        content: '';
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        z-index: 1;
+        opacity: 0;
+    }
+
+    .content_item:before {
+        -webkit-transform: scaleY(2);
+        transform: scaleY(2);
+    }
+
+    .content_item:after {
+        -webkit-transform: scaleY(2);
+        transform: scaleY(2);
+    }
+
+    .content_item img {
+        vertical-align: top;
+        max-width: 100%;
+        backface-visibility: hidden;
+    }
+
+    .content_item figcaption {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        align-items: center;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.1em;
+        opacity: 0;
+        z-index: 2;
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s;
+    }
+
+    .content_item h3 {
+        font-size: 1em;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    .content_item h3 span {
+        display: block;
+        font-weight: 700;
+    }
+
+    .content_item a {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 3;
+    }
+
+    .content_item:hover>img,
+    .content_item.hover>img {
+        opacity: 0.7;
+    }
+
+    .content_item:hover:before,
+    .content_item.hover:before,
+    .content_item:hover:after,
+    .content_item.hover:after {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .content_item:hover figcaption,
+    .content_item.hover figcaption {
+        opacity: 1;
+        -webkit-transition-delay: 0.1s;
+        transition-delay: 0.1s;
+    }
+
+
+    body {
+        background-color: #212121;
+        text-align: center;
+    }
+</style>
+
+<figure class="content_item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample1.jpg" alt="sample109" />
+    <figcaption>
+        <h3>Project <span>Sample Content</span></h3>
+    </figcaption>
+    <a href="#"></a>
+</figure>
+<figure class="content_item"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample2.jpg" alt="sample106" />
+    <figcaption>
+        <h3>Project <span>Sample Content</span></h3>
+    </figcaption>
+    <a href="#"></a>
+</figure>
+<figure class="content_item"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg" alt="sample109" />
+    <figcaption>
+        <h3>Project <span>Sample Content</span></h3>
+    </figcaption>
+    <a href="#"></a>
+</figure>
+<figure class="content_item"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample4.jpg" alt="sample109" />
+    <figcaption>
+        <h3>Project <span>Sample Content</span></h3>
+    </figcaption>
+    <a href="#"></a>
+</figure>
+<figure class="content_item"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample5.jpg" alt="sample109" />
+    <figcaption>
+        <h3>Project <span>Sample Content</span></h3>
+    </figcaption>
+    <a href="#"></a>
+</figure>
+<figure class="content_item"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample6.jpg" alt="sample109" />
+    <figcaption>
+        <h3>Project <span>Sample Content</span></h3>
+    </figcaption>
+    <a href="#"></a>
+</figure>
+<figure class="content_item">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample7.jpg" alt="sample109" />
+    <figcaption>
+        <h3>Project <span>Sample Content</span></h3>
+    </figcaption>
+    <a href="#"></a>
+</figure>
+<figure class="content_item"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample8.jpg" alt="sample106" />
+    <figcaption>
+        <h3>Project <span>Sample Content</span></h3>
+    </figcaption>
+    <a href="#"></a>
+</figure>
+<figure class="content_item"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample9.jpg" alt="sample109" />
+    <figcaption>
+        <h3>Project <span>Sample Content</span></h3>
+    </figcaption>
+    <a href="#"></a>
+</figure>
+<figure class="content_item"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample10.jpg" alt="sample109" />
+    <figcaption>
+        <h3>Project <span>Sample Content</span></h3>
+    </figcaption>
+    <a href="#"></a>
+</figure>
+<figure class="content_item"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample11.jpg" alt="sample109" />
+    <figcaption>
+        <h3>Project <span>Sample Content</span></h3>
+    </figcaption>
+    <a href="#"></a>
+</figure>
+<figure class="content_item"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample12.jpg" alt="sample109" />
+    <figcaption>
+        <h3>Project <span>Sample Content</span></h3>
+    </figcaption>
+    <a href="#"></a>
+</figure>
+{% endblock %}
