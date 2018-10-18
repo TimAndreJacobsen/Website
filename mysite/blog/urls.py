@@ -1,8 +1,7 @@
-from django.conf.urls import url, include
+from django.urls import path, include
 from django.views.generic import ListView, DetailView
 from blog.models import Post
 
-from django.urls import path, include
 from . import views
 
 urlpatterns = [ 

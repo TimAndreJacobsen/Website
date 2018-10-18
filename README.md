@@ -2,4 +2,4 @@
 
 #### python 3.6
 #### django 2.1.2
-#### Bootstrap v4.1.3
+#### Bootstrap v4.1.3   
