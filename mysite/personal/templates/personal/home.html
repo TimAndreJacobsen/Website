@@ -4,7 +4,7 @@
 
 <style>
         @import url(https://fonts.googleapis.com/css?family=Roboto:100,700;);
-        .snip1585 {
+        .content_item {
           background-color: #000;
           color: #fff;
           display: inline-block;
@@ -19,15 +19,15 @@
           width: 100%;
         }
         
-        .snip1585 * {
+        .content_item * {
           -webkit-box-sizing: border-box;
           box-sizing: border-box;
           -webkit-transition: all 0.45s ease;
           transition: all 0.45s ease;
         }
         
-        .snip1585:before,
-        .snip1585:after {
+        .content_item:before,
+        .content_item:after {
           background-color: rgba(0, 0, 0, 0.5);
           border-top: 50px solid rgba(0, 0, 0, 0.5);
           border-bottom: 50px solid rgba(0, 0, 0, 0.5);
@@ -43,23 +43,23 @@
           opacity: 0;
         }
         
-        .snip1585:before {
+        .content_item:before {
           -webkit-transform: scaleY(2);
           transform: scaleY(2);
         }
         
-        .snip1585:after {
+        .content_item:after {
           -webkit-transform: scaleY(2);
           transform: scaleY(2);
         }
         
-        .snip1585 img {
+        .content_item img {
           vertical-align: top;
           max-width: 100%;
           backface-visibility: hidden;
         }
         
-        .snip1585 figcaption {
+        .content_item figcaption {
           position: absolute;
           top: 0;
           bottom: 0;
@@ -77,7 +77,7 @@
           transition-delay: 0s;
         }
         
-        .snip1585 h3 {
+        .content_item h3 {
           font-size: 1em;
           font-weight: 400;
           letter-spacing: 1px;
@@ -85,12 +85,12 @@
           text-transform: uppercase;
         }
         
-        .snip1585 h3 span {
+        .content_item h3 span {
           display: block;
           font-weight: 700;
         }
         
-        .snip1585 a {
+        .content_item a {
           position: absolute;
           top: 0;
           bottom: 0;
@@ -99,22 +99,22 @@
           z-index: 3;
         }
         
-        .snip1585:hover > img,
-        .snip1585.hover > img {
+        .content_item:hover > img,
+        .content_item.hover > img {
           opacity: 0.7;
         }
         
-        .snip1585:hover:before,
-        .snip1585.hover:before,
-        .snip1585:hover:after,
-        .snip1585.hover:after {
+        .content_item:hover:before,
+        .content_item.hover:before,
+        .content_item:hover:after,
+        .content_item.hover:after {
           -webkit-transform: scale(1);
           transform: scale(1);
           opacity: 1;
         }
         
-        .snip1585:hover figcaption,
-        .snip1585.hover figcaption {
+        .content_item:hover figcaption,
+        .content_item.hover figcaption {
           opacity: 1;
           -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
@@ -127,19 +127,19 @@
         }
 </style>
 
-<figure class="snip1585"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample70.jpg" alt="sample109" />
+<figure class="content_item"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample70.jpg" alt="sample109" />
     <figcaption>
     <h3>Index <span>Samples</span></h3>
     </figcaption>
     <a href="/include/"></a>
 </figure>
-<figure class="snip1585"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample106.jpg" alt="sample106" />
+<figure class="content_item"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample106.jpg" alt="sample106" />
     <figcaption>
         <h3>Index <span>Blog</span></h3>
     </figcaption>
     <a href="/blog/"></a>
 </figure>
-<figure class="snip1585"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample109.jpg" alt="sample109" />
+<figure class="content_item"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample109.jpg" alt="sample109" />
     <figcaption>
         <h3>Index <span>Contact</span></h3>
     </figcaption>
